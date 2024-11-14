@@ -1,1 +1,2 @@
 include ':app', ':fpsviewer', ':fpsviewer-no-op'
+//include ':app'

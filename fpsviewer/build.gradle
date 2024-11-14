@@ -1,8 +1,8 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-android'
-apply plugin: 'com.github.dcendents.android-maven'
-apply plugin: 'kotlin-kapt'
+//apply plugin: 'com.github.dcendents.android-maven'
+//apply plugin: 'kotlin-kapt'
 
 group='com.github.silencedut'
 
@@ -26,7 +26,7 @@ android {
         }
     }
 
-    // 指定编码
+    /*// 指定编码
     tasks.withType(JavaCompile) {
         options.encoding = "UTF-8"
     }
@@ -39,7 +39,7 @@ android {
 
     artifacts {
         archives sourcesJar
-    }
+    }*/
 
     packagingOptions {
         exclude 'META-INF/atomicfu.kotlin_module'
@@ -62,8 +62,8 @@ dependencies {
 
     implementation "com.google.code.gson:gson:$gson"
 
-    kapt "android.arch.persistence.room:compiler:$roomVersion"
-    kapt "com.github.silencedut.hub:hub-compiler:$hub"
+//    kapt "android.arch.persistence.room:compiler:$roomVersion"
+//    kapt "com.github.silencedut.hub:hub-compiler:$hub"
 
     // Coroutines
     api "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines"
